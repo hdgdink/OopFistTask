@@ -1,0 +1,41 @@
+package substance.biker;
+
+import substance.equipment.Equip;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by User on 17.06.2017.
+ */
+public class Biker {
+    final String BIKER = "Biker{";
+    final String NAME = "mName='";
+    final String EQIUPS = ", equips=";
+    private String name;
+    private List<Equip> equips = new ArrayList<Equip>();
+
+    public String getmName() {
+        return name;
+    }
+
+    public void setmName(String mName) {
+        this.name = mName;
+    }
+
+    public void addEquips(Equip equip) {
+        equips.add(equip);
+    }
+
+    public List<Equip> getEquipList() {
+        return equips;
+    }
+
+    @Override
+    public String toString() {
+        return BIKER +
+                NAME + name + '\'' +
+                EQIUPS + equips +
+                '}';
+    }
+}
