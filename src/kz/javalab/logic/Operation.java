@@ -12,8 +12,8 @@ import java.util.List;
  */
 public class Operation {
 
-    public static ArrayList<Equip> getEquipsByPriceGap(Biker biker, double minPrice, double maxPrice) {
-        ArrayList<Equip> filteredEquips = new ArrayList<Equip>();
+    public static List<Equip> getEquipsByPriceGap(Biker biker, double minPrice, double maxPrice) {
+        List<Equip> filteredEquips = new ArrayList<Equip>();
         for (Equip equip : biker.getEquipList()) {
             if (equip.getPrice() <= maxPrice && equip.getPrice() >= minPrice) {
                 filteredEquips.add(equip);
