@@ -13,13 +13,14 @@ public class Biker {
     final String NAME = "mName='";
     final String EQIUPS = ", equips=";
     private String name;
+
     private List<Equip> equips = new ArrayList<Equip>();
 
-    public String getmName() {
+    public String getName() {
         return name;
     }
 
-    public void setmName(String mName) {
+    public void setName(String mName) {
         this.name = mName;
     }
 

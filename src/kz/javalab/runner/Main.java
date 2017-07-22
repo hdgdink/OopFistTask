@@ -30,7 +30,7 @@ public class Main {
 
         EquipsCreator list = new EquipsCreator();
         Biker biker = list.creatEquip();
-        System.out.println(NAME + biker.getmName());
+        System.out.println(NAME + biker.getName());
         List<Equip> equipList = biker.getEquipList();
 
         for (int i = 0; i < equipList.size(); i++) {

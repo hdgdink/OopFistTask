@@ -20,14 +20,14 @@ public class EquipsCreator {
 
     public Biker creatEquip() {
 
-        Boots boots = new Boots(SPORT, ALPINE, 3.5, 215.35, 40, true);
-        Gloves gloves = new Gloves(SPORT, LEATHER, ALPINE, 0.6, 80, 2, true);
-        Helmet helmet = new Helmet(STREET, TRANSPARENT, ARAI, 1.58, 326, 58, true);
-        Jacket jacket = new Jacket(CEVLAR, true, DAINESE, 1.23, 180.54, 48, false);
-        Pants pants = new Pants(CEVLAR, true, DAINESE, 1.5, 190.15, 48, false);
+        Equip boots = new Boots(SPORT, ALPINE, 3.5, 215.35, 40, true);
+        Equip gloves = new Gloves(SPORT, LEATHER, ALPINE, 0.6, 80, 2, true);
+        Equip helmet = new Helmet(STREET, TRANSPARENT, ARAI, 1.58, 326, 58, true);
+        Equip jacket = new Jacket(CEVLAR, true, DAINESE, 1.23, 180.54, 48, false);
+        Equip pants = new Pants(CEVLAR, true, DAINESE, 1.5, 190.15, 48, false);
 
         Biker biker = new Biker();
-        biker.setmName(NAME);
+        biker.setName(NAME);
         biker.addEquips(boots);
         biker.addEquips(gloves);
         biker.addEquips(helmet);
